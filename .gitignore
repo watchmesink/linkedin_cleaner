@@ -1,0 +1,29 @@
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Development files
+chronicles.csv
+*.tmp
+*.temp
+
+# Node modules (if any future JS tools are added)
+node_modules/
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# Backup files
+*.bak
+*~

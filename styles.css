@@ -1,0 +1,85 @@
+.linkedin-cleaner-indicator {
+  background: #f3f6f8;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 8px 0;
+  padding: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.hidden-post-notice {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #666;
+}
+
+.hidden-post-left { display: flex; align-items: center; gap: 10px; }
+.hidden-post-left .author-avatar { width: 32px; height: 32px; border-radius: 50%; object-fit: cover; }
+.hidden-post-left .author-meta { display: flex; flex-direction: column; }
+.hidden-post-left .author-name { font-weight: 600; color: #222; }
+.hidden-post-left .author-role { font-size: 12px; color: #666; }
+.hidden-post-left .post-snippet { font-size: 13px; color: #555; }
+
+.hidden-post-right { display: flex; align-items: center; gap: 12px; margin-left: auto; }
+.score-badge { font-weight: 700; color: #444; }
+
+.show-hidden-post {
+  background: #0073b1;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  width: 92px; /* fixed width */
+  text-align: center;
+}
+
+.show-hidden-post:hover {
+  background: #005885;
+}
+
+.linkedin-cleaner-hidden {
+  display: none !important;
+}
+
+.linkedin-cleaner-blur {
+  filter: blur(6px) brightness(0.9);
+  pointer-events: none;
+}
+
+.linkedin-cleaner-score-badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 10;
+  font-size: 11px;
+  font-weight: 600;
+  color: #0073b1;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid #0073b1;
+  border-radius: 12px;
+  padding: 2px 6px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.2s ease;
+}
+
+.linkedin-cleaner-score-badge:hover {
+  opacity: 0.8;
+}
+
+.hidden-post-left .post-preview {
+  font-size: 13px;
+  color: #555;
+  font-style: italic;
+  margin-top: 4px;
+}
+
+.hidden-post-left .filter-reason {
+  font-size: 12px;
+  color: #888;
+  margin-top: 2px;
+}
