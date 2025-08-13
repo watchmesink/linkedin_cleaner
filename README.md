@@ -112,7 +112,7 @@ A Chrome extension that uses AI to analyze and hide uninformative, bragging, or 
 
 ## 📈 Performance Info
 
-- **Model**: Gemini 2.0 Flash Experimental
+- **Model**: Gemini 2.0 Flash
 - **Rate Limit**: 100 requests per minute
 - **Debounce Delay**: 300ms for optimal responsiveness
 - **Fallback Score**: 8/10 when API unavailable
