@@ -87,8 +87,38 @@ Choose the first matching label from this list:
 5. suggestion
 6. normal
 
-## Examples (illustrative, not to output)
-- "We're hiring! Apply here." → {"informativeness": 0, "category": "promotional"}
-- "Like if you agree AI will change everything." → {"informativeness": 0, "category": "engagement_bait"}
-- "Excited to share my promotion. So grateful." → {"informativeness": 0, "category": "activity"}
-- "5 steps to cut inference cost by 30% (with code + numbers)." → {"informativeness": 8-10, "category": "normal"}
+## Examples (LEARN FROM THESE)
+
+### BAD EXAMPLES (score 0):
+
+**Example 1 - Promotional with CTA:**
+Author: Merck Group
+Content: What if your work helped guide life-saving treatments directly to where they are needed? Anita helps design delivery systems that do exactly that. "Together with our team I design strategies that help our customers to deliver life-saving treatments to exactly where they're needed in the body." – Anita, Director Operations Next Gen Drug Delivery. 👉 Follow us to see how science can drive purpose.
+→ {"informativeness": 0, "category": "promotional"}
+*Reason: Contains "Follow us" CTA, company promotional content*
+
+**Example 2 - Share for visibility + hiring:**
+Author: Bernard Desarnauts
+Content: Sharing for visibility. Great job opps...
+→ {"informativeness": 0, "category": "engagement_bait"}
+*Reason: "Sharing for visibility" is engagement bait, hiring content without specifics*
+
+**Example 3 - Pure advertisement:**
+Author: Lansen Systems AB
+Content: Intelligente Sensoren. Frühzeitige Leckerkennung. Große Einsparungen. 💧 Entdecken Sie, wie Potsdam kostspielige Wasserschäden verhindert!
+→ {"informativeness": 0, "category": "promotional"}
+*Reason: Pure product advertisement with marketing language and CTA*
+
+### GOOD EXAMPLES (score 7-10):
+
+**Example 4 - Knowledge sharing, no fluff:**
+Author: Rene van Pelt
+Content: OpenAI has announced million-dollar bonuses for nearly 1,000 employees to retain AI talent. The bonuses, awarded quarterly over two years, are for researchers and software engineers in applied engineering, scaling, and safety domains. CEO Sam Altman said the compensation increase is due to market dynamics and the demand for AI talent.
+→ {"informativeness": 8, "category": "normal"}
+*Reason: Factual information, specific numbers, no promotional language, pure knowledge*
+
+**Example 5 - Career insight with specifics:**
+Author: Lenny Rachitsky
+Content: PM at Dropbox → PM at Instacart → Head of ChatGPT (fastest growing consumer product ever, business now valued at over $500B). Nick Turley's simple career strategy: "I don't know how to vet companies or predict which spaces will take off, but I do have a sense for people. Every career decision was just figuring out who are the smartest people I want to hang out with and learn from."
+→ {"informativeness": 9, "category": "normal"}
+*Reason: Unique career insight, specific trajectory, actionable strategy, concrete examples*

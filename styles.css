@@ -15,12 +15,7 @@
   color: #666;
 }
 
-.hidden-post-left { display: flex; align-items: center; gap: 10px; }
-.hidden-post-left .author-avatar { width: 32px; height: 32px; border-radius: 50%; object-fit: cover; }
-.hidden-post-left .author-meta { display: flex; flex-direction: column; }
-.hidden-post-left .author-name { font-weight: 600; color: #222; }
-.hidden-post-left .author-role { font-size: 12px; color: #666; }
-.hidden-post-left .post-snippet { font-size: 13px; color: #555; }
+.hidden-post-left { display: flex; flex-direction: column; gap: 4px; }
 
 .hidden-post-right { display: flex; align-items: center; gap: 12px; margin-left: auto; }
 .score-badge { font-weight: 700; color: #444; }
